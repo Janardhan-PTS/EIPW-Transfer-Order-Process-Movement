@@ -4,6 +4,8 @@
   <dependencies>
     <features>
       <feature required="true">SERVERSIDESCRIPTING</feature>
+      <feature required="false">CRM</feature>
+      <feature required="false">CREATESUITEBUNDLES</feature>
     </features>
   </dependencies>
 </manifest>

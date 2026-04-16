@@ -1,26 +1,25 @@
-<usereventscript scriptid="customscript_ptk_ue_preview_tax_button">
-  <description></description>
+<clientscript scriptid="customscript_pts_set_hsncode_cs">
+  <description>Set HSN Code based on get the value from item master based on selection of item and Based on HSN set the tax in line level in Transfer order</description>
   <isinactive>F</isinactive>
-  <name>PTK UE Preview tax button</name>
+  <name>[CS] PTS Set HSN &amp; Tax in Line level TO</name>
   <notifyadmins>F</notifyadmins>
   <notifyemails></notifyemails>
   <notifyowner>T</notifyowner>
   <notifyuser>F</notifyuser>
-  <scriptfile>[/SuiteScripts/PTK Transfer Order GST/ptk_ue_preview_tax_transfer_order.js]</scriptfile>
+  <scriptfile>[/SuiteScripts/setHSNcodeCS.js]</scriptfile>
   <scriptdeployments>
-    <scriptdeployment scriptid="customdeploy_ptk_ue_preview_tax_button">
+    <scriptdeployment scriptid="customdeploy_pts_set_hsncode_cs">
       <allemployees>T</allemployees>
       <alllocalizationcontexts>T</alllocalizationcontexts>
-      <allpartners>F</allpartners>
+      <allpartners>T</allpartners>
       <allroles>T</allroles>
-      <audslctrole>CUSTOMER_CENTER|EMPLOYEE_CENTER|NETSUITE_SUPPORT_CENTER__BASIC|NETSUITE_SUPPORT_CENTER|ONLINE_FORM_USER|PARTNER_CENTER|VENDOR_CENTER</audslctrole>
+      <audslctrole></audslctrole>
       <eventtype></eventtype>
       <executioncontext>ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|RESTWEBSERVICES|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBSERVICES|WORKBOOKBUILDER|WORKFLOW</executioncontext>
       <isdeployed>T</isdeployed>
       <loglevel>DEBUG</loglevel>
       <recordtype>TRANSFERORDER</recordtype>
-      <runasrole>ADMINISTRATOR</runasrole>
       <status>RELEASED</status>
     </scriptdeployment>
   </scriptdeployments>
-</usereventscript>
+</clientscript>
